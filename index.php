@@ -17,9 +17,16 @@
             <td>Harga</td>
         </tr>
         <?php 
+            // Mengimpor file produk.php yang berisi data produk
             include 'produk.php';
+
+            // Inisialisasi nomor urut
             $no = 1;
+
+            // Membuat objek produk
             $produk = new produk();
+
+            // Mengulangi data produk dan menampilkannya dalam tabel
             foreach($produk->data() as $produk){
         ?>
         <tr>
@@ -42,9 +49,16 @@
             <td>No HP</td>
         </tr>
         <?php 
+            // Mengimpor file pelanggan.php yang berisi data pelanggan
             include 'pelanggan.php';
+
+            // Mereset nomor urut
             $no = 1;
+
+            // Membuat objek pelanggan
             $pelanggan = new pelanggan();
+
+            // Mengulangi data pelanggan dan menampilkannya dalam tabel
             foreach($pelanggan->dataPelanggan() as $pelanggan){
         ?>
         <tr>
